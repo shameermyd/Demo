@@ -243,12 +243,12 @@ export const CustomersTable = () => {
                   {/* Render CPD_IA columns dynamically */}
                   {Object.keys(item.CPD_IA).map((key) => (
                     <TableCell key={key}>
-                      {key}<br/>{renderSwitch(item.No, key, item.CPD_IA[key][0])} {item.CPD_IA[key][0]}
+                      {key}<br/>Yes{renderSwitch(item.No, key, item.CPD_IA[key][0])} {item.CPD_IA[key][0]}
                     </TableCell>
                   ))}
                   {/* Render other properties dynamically */}
-                  <TableCell>{item.Thickness || '-'}</TableCell>
-                  <TableCell>{item.Brand || '-'}</TableCell>
+                  {/* <TableCell>{item.Thickness || '-'}</TableCell> */}
+                  {/* <TableCell>{item.Brand || '-'}</TableCell> */}
                   {/* Add more cells for additional properties */}
                 </TableRow>
               ))}

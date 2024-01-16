@@ -155,10 +155,10 @@ const Page = () => {
   );
 };
 
-Page.getLayout = (page) => (
-  <AuthLayout>
-    {page}
-  </AuthLayout>
-);
+// Page.getLayout = (page) => (
+//   <AuthLayout>
+//     {page}
+//   </AuthLayout>
+// );
 
 export default Page;

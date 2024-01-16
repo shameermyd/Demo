@@ -25,7 +25,7 @@ const Page = () => {
   const [method, setMethod] = useState('email');
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
+      email: 'sha@mail.com',
       password: 'Password123!',
       submit: null
     },
@@ -193,7 +193,7 @@ const Page = () => {
                   sx={{ mt: 3 }}
                 >
                   <div>
-                    You can use <b>demo@devias.io</b> and password <b>Password123!</b>
+                    You can use <b>sha@mail.com</b> and password <b>Password123!</b>
                   </div>
                 </Alert>
               </form>
@@ -204,10 +204,10 @@ const Page = () => {
                   sx={{ mb: 1 }}
                   variant="h6"
                 >
-                  Not available in the demo
+                  Not available
                 </Typography>
                 <Typography color="text.secondary">
-                  To prevent unnecessary costs we disabled this feature in the demo.
+                  Under Construction.
                 </Typography>
               </div>
             )}
@@ -218,10 +218,10 @@ const Page = () => {
   );
 };
 
-Page.getLayout = (page) => (
-  <AuthLayout>
-    {page}
-  </AuthLayout>
-);
+// Page.getLayout = (page) => (
+//   <AuthLayout>
+//     {page}
+//   </AuthLayout>
+// );
 
 export default Page;
